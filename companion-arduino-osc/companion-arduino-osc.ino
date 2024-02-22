@@ -30,10 +30,10 @@
 
 // Arduino input pins (you need to short them to GND to "press")
 char inputPin[] = {
-  9,
   8,
   7,
-  6
+  6,
+  5
 };
 
 // Which companion button do you want to link this to?
@@ -47,11 +47,11 @@ char companionButton[] = {
 char input[sizeof(inputPin)];
 
 // Arduino IP and custom HW address.
-IPAddress ip(10, 255, 255, 254);
+IPAddress ip(10, 1, 1, 227);
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
 // Companion IP
-byte destIp[]  = { 10, 255, 255, 253 };
+byte destIp[]  = { 10, 1, 1, 113 };
 
 // Companion OSC Port
 int destPort = 12321; // Companion OSC port
